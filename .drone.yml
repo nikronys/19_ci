@@ -3,7 +3,8 @@ pipeline:
     image: node:latest
     volumes: 
       - /var/run/docker.sock:/var/run/docker.sock
-    when: [pull_request]
+    when: 
+      event: [pull_request]
     commands: 
       - npm install --silent
       - npm run lint
