@@ -4,7 +4,7 @@ pipeline:
     secrets: [ docker_username, docker_password ]
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    repo: nikronys/19_ci
+    repo: nikronis/drone-demo
     tags:
       - latest
       - ${DRONE_BRANCH}
