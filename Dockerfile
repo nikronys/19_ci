@@ -3,7 +3,7 @@ FROM node:latest
 RUN mkdir /drone
 RUN mkdir /drone/src
 
-COPY ['.','/drone']
+COPY ['./','/drone']
 
 WORKDIR /drone
 
